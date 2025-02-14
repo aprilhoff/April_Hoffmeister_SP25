@@ -1,0 +1,86 @@
+/* Geeral Styles */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+body{
+    background-color: rgb(68, 68, 68);
+    color: rgb(192, 192, 192);
+    padding: 30px;
+    font-size: 50px;
+}
+
+::selection{
+    text-shadow:0 0 30px rgb(255, 95, 220), 0 0 30px blue, 0 0 30px rgb(0, 0, 0);
+
+}
+
+/* Nav */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.nav{
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.nav-link{
+    background-color: black;
+    padding: 20px;
+    border-radius: 100px;
+}
+
+    .nav-link:hover{
+        background-color: rgb(255, 95, 220);
+        box-shadow: 0 0 20px rgb(255, 95, 220), 0 0 20px blue;
+    }
+
+
+/* Main */
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.main{
+    font-size: 11rem;
+}
+
+.home .main{
+    font-size:15rem;
+    text-shadow:0 0 30px rgb(255, 95, 220), 0 0 30px blue, 0 0 30px rgb(0, 0, 0);
+    color: rgb(255, 95, 220);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+h1:hover, h2:hover, p:hover{
+    color: rgb(255, 95, 220);
+}
+
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+img{
+    position: absolute;
+    z-index: 1;
+    height: 60vh;
+    mix-blend-mode: overlay;
+    animation: rotate 10s linear infinite;
+}
+    .baby_tom{
+        position: absolute;
+        top: 190px;
+        left: 100px;
+    }
+
+    .sibling{
+        animation: none;
+        top: 30vh;
+        left: 20vw;
+        height: 80%;
+        z-index: -1;
+        box-shadow: 0 0 90px rgb(255, 95, 220), 0 0 20px blue;
+    }
