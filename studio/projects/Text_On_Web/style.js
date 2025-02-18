@@ -7,8 +7,14 @@ let changeNav = document.querySelector('.nav');
 let changeStar = document.querySelector('.nav_star');
 let changeTrack = document.querySelector('#slider');
 
+
 input.addEventListener('input', function() {
-    // Remove all previous class changes
+    styleBox();
+});
+
+styleBox();
+
+function styleBox(){
     changeFont.classList.remove("p_font_change", "p_color_change", "p_border_add");
     changeHeader.classList.remove("header_change");
     changeHome.classList.remove("h1_change");
@@ -16,7 +22,6 @@ input.addEventListener('input', function() {
     changeStar.classList.remove("nav_star_change");
     changeTrack.classList.remove("change_track", "change_thumb")
 
-    // Convert input.value to an integer for comparison
     let inputValue = parseInt(input.value);
 
     if (inputValue === 1) {
@@ -37,7 +42,7 @@ input.addEventListener('input', function() {
         changeStar.classList.add("nav_star_change");
         changeTrack.classList.add("change_track", "change_thumb");
     }
-});
+};
 
 
 

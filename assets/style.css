@@ -1,6 +1,6 @@
 html {
-	background: rgb(116, 116, 116);
-	color: rgb(226, 224, 224);
+	background: rgb(130, 130, 130);
+	color: rgb(224, 226, 226);
 }
 
 body{
@@ -19,7 +19,7 @@ h2{
 }
 
 h1:hover, h2:hover{
-	color: rgb(122, 255, 78);
+	text-shadow: 0 0 20px rgb(122, 255, 78);
 }
 
 ul{
