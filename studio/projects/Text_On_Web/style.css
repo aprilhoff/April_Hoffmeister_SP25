@@ -408,3 +408,29 @@ a{
 a:hover{
    cursor: pointer;
 }
+
+
+
+/* media queries  */
+/* ///////////// */
+
+
+@media (max-width: 1024px) {
+    .main {
+      grid-template-columns: 1fr;
+      grid-template-rows: 40px 1fr;
+    }
+
+    input{
+        rotate: 0deg;
+        top: 0;
+        border: none;
+        position: sticky;
+    }
+    nav{
+        width: 100vw;
+        border: none;
+        height: 10px;
+        position: sticky;
+    }
+  }
