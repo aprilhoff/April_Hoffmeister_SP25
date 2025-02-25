@@ -416,6 +416,8 @@ a:hover{
 
 
 @media (max-width: 1024px) {
+
+    
     .main {
       grid-template-columns: 1fr;
       grid-template-rows: 40px 1fr;
@@ -432,5 +434,21 @@ a:hover{
         border: none;
         height: 10px;
         position: sticky;
+    }
+    p, .p_font_change, .p_border_add, .p_border_add_blue,  .p_border_add_orange ,  .p_border_add_yellow, .p_border_add_about, .p_color_change, .p_color_change_blue,  .p_color_change_orange,.p_color_change_yellow, .p_color_change_about {
+        font-size: 1rem;
+        padding: 2rem;
+        padding-top: 0;
+    };
+    .text{
+        padding: 0;
+        margin-left: 0;
+    }
+    .nav_star{
+       height: 3rem;
+    }
+    .nav_star_new{
+      left: 0;
+      height: 3rem;
     }
   }
