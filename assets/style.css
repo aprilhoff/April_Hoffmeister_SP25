@@ -23,8 +23,7 @@ h2{
 	font-family: vista-sans-narrow, sans-serif;
 	font-weight: 400;
 	font-style: normal;
-
-
+	border-bottom: 1px solid white;
 }
 
 h1:hover, h2:hover{
@@ -38,7 +37,7 @@ ul{
 
 a{
 	text-decoration: none;
-	color: rgb(122, 255, 78);
+	color: rgb(226, 224, 224);
 }
 	a:hover{
 		color: rgb(226, 224, 224);
@@ -59,11 +58,14 @@ a{
 		font-weight: 400;
 		font-style: normal;
 		font-size: 2rem;
+		z-index: 100000;
+
 	  }
 
 	  .dropdown {
 		position: relative;
 		display: inline-block;
+		z-index: 100000;
 	  }
 	  .dropdown-content {
 		display: none;
@@ -76,6 +78,7 @@ a{
 		font-family: vista-sans-narrow, sans-serif;
 		font-weight: 400;
 		font-style: normal;
+		z-index: 100000;
 	  }
 	  .dropdown-content a {
 		color: black;
@@ -85,15 +88,19 @@ a{
 		font-family: vista-sans-narrow, sans-serif;
 		font-weight: 400;
 		font-style: normal;
+		z-index: 100000;
 	  }
 
 		.dropdown-content a:hover {background-color:#ff4ebb;border-radius: 10px; font-family: vista-sans-narrow, sans-serif;
 			font-weight: 400;
-			font-style: normal;}
+			font-style: normal;
+			z-index: 100000;
+		}
 
 		.dropdown:hover .dropdown-content {display: block;}
 
-		.dropdown:hover .dropbtn {background-color: #555353; color: #ff4ebb ;}
+		.dropdown:hover .dropbtn {background-color: #555353; color: #ff4ebb ;
+			z-index: 100000;}
 
 		#move{
 			top: 20px;
@@ -116,28 +123,54 @@ a{
 		img {
 			max-width: 100%;  
 			height: auto; 
+			box-shadow: 10px black;
 		}
 
-	.suprise{
-		margin: 0;
+
+	img{
+		margin-bottom: 30px;
+		width: 50%;
+		height: auto;
+	}
+
+	.p1_1 {
 		display: flex;
-		justify-content: center;
-		align-items: center;
-
+		flex-direction: column;
+		position: relative;
+		border: 1px solid white;
+		padding-left: 10px;
+		width: 95%;
+		border-bottom: none;
 	}
 
-	h3{
-		font-family: "modula-round-ribbed", sans-serif;
-		font-weight: 800;
-	 	font-size: 25rem;	
-		position: absolute;
-		top: 20px;
-		color: aqua;
-		mix-blend-mode: overlay;
-		rotate: 40deg;
-		opacity: 0;
+	.p1_2{
+
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		border: 1px solid white;
+		padding-left: 10px;
+		width: 95%;
+		border-bottom: none;
 	}
 
-	h3:hover{
-		opacity: 1;
+	.p1_3{
+
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		border: 1px solid white;
+		padding-left: 10px;
+		width: 95%;
+		border-bottom: none;
+	}
+	.p1_4{
+
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		border: 1px solid white;
+		padding-left: 10px;
+		width: 95%;
+		margin-bottom: 50px;
 	}
