@@ -24,7 +24,7 @@ function styleBox(){
 
     let inputValue = parseInt(input.value);
 
-    if (inputValue === 1) {
+    (if (inputValue === 1) ){
         console.log('change 1');
         changeFont.classList.add("p_font_change");
     } else if (inputValue === 2) {
