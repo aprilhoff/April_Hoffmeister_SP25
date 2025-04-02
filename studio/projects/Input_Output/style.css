@@ -1,0 +1,427 @@
+/* import typeface used */
+::-webkit-scrollbar {
+    display: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@font-face {
+    font-family:'Opensansbold';
+    src: url(assets/Onlysans-Light.otf);
+}
+/* html styling */
+html{
+    background-color: #F9FF54;
+}
+
+/* navigator  */
+nav{
+    background-color: #292929;
+    width: 60px;
+    height: 100%;
+    flex-shrink: 0; 
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+}
+
+    .circle{
+        margin-top: 60px;
+        z-index: 102;
+        
+    }
+    .circle_hover:hover{
+        fill: rgb(211, 211, 211);
+    }
+
+    .collection{
+        font-family: 'Opensansbold';
+        font-size: 30px;
+        background: #565656;       
+        color: #F9FF54;
+        transform: rotate(30deg);
+        border-radius: 65px;
+        position: fixed;
+        top:120px;
+        left: -10px;
+        padding-left: 90px;
+        padding-right: 90px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        z-index: 101;
+        opacity: 0;
+
+    }
+    
+    .about{
+        font-family: 'Opensansbold';
+        font-size: 30px;
+        background-color: #848484;
+        color: #F9FF54;
+        transform: rotate(0deg);
+        border-radius: 65px;
+        position: fixed;
+        top:53px;
+        left: 10px;
+        padding-left: 90px;
+        padding-right: 90px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        z-index: 101;
+        opacity: 0;
+    }
+    .collection_reveal{
+        opacity: 1;
+    }
+    .about_reveal{
+        opacity: 1;
+    }
+
+    .text_nav{
+        transform: rotate(90deg);
+        flex-shrink: 0;
+        position: fixed;
+        top: 240px;
+        color: #F9FF54;
+        font-size: 30px;
+        font-family: 'Opensansbold';
+        z-index: 200;
+        display: inline-block;
+        white-space: nowrap;
+    }
+    a{
+        text-decoration: none;
+        color: #F9FF54;
+    }
+
+/* main section */
+    
+main{
+    margin-top: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    display: grid;
+    contain: content;
+    justify-content: center;
+}
+
+.next{
+    position: fixed;
+    top: 90%;
+    right: 2%;
+}
+
+/* grid input */
+
+.input_grid{
+    display: grid;
+    grid-template-rows: .5fr 1fr .5fr;
+    grid-template-columns: 2fr 1fr;
+    background-color: #b8b8b8;
+    border:solid black 2px ;
+    font-family: 'Opensansbold';
+    font-weight: 300;
+    color: #292929;
+    margin-top: 10px;
+    text-align: center;
+    box-shadow: 7px -7px 14.9px -5px rgba(0, 0, 0, 0.60) inset;
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+}
+    .where{
+        font-size: 25px;
+        padding: 6rem;
+        border-right: 2px black solid;
+        border-bottom: 2px black solid;
+
+    }
+    .what{
+        font-size: 25px;
+        padding: 6rem;
+        border-right: 2px black solid;
+        border-bottom: 2px black solid;
+    }
+    .would{
+        font-size: 25px;
+        padding: 5rem;
+        border-right: 2px black solid;
+    }
+    .range{
+        border-bottom: 2px black solid;
+        padding-top: 7rem;
+    }
+    input[type="range"] {
+        -webkit-appearance: none;
+        appearance: none;
+        cursor: pointer;
+        outline: none;
+        height: 15px;
+        background: #F9FF54;
+        border-radius: 16px;
+        width: 190px;
+      }
+
+      input[type="range"]::-webkit-slider-thumb {
+        /* removing default appearance */
+        -webkit-appearance: none;
+        appearance: none;
+        /* creating a custom design */
+        height: 15px;
+        width: 15px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 2px solid rgb(0, 0, 0);
+      }
+
+
+
+    .form{
+        border-bottom: 2px black solid;
+        padding-top: 2.5rem;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+    .form label {
+        display: block;
+        width: 90px;
+        margin: 0 auto;
+    }
+    #cheat_death{
+        padding-top: 6rem;
+    }
+    #cheat_death *{
+        background-color: #F9FF54;
+        cursor: pointer;
+    }
+
+.submit{
+    background-color: #b8b8b8;
+    color: #292929;
+    width: 90px;
+    border-radius: 5px;
+    box-shadow: 7px -7px 14.9px -5px rgba(0, 0, 0, 0.60) inset;
+    font-family: 'Opensansbold';
+    font-weight: 400;
+    margin-top: 30px;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    transition: transform 0.2s ease ;
+
+
+}
+.submit:hover{
+    background-color: #828282;
+    color: #F9FF54;
+    cursor: pointer;
+}
+.submit:active{
+    transform: scale(85%);
+}
+
+select {
+    font-family: 'Opensansbold';
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+
+input[type="radio"] {
+    display: none;
+  }
+
+  label {
+    padding: 5px 10px;
+    border: 2px solid #333;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+
+  input[type="radio"]:checked + label {
+    background-color: #F9FF54;
+    color: rgb(67, 67, 67);
+    border-color: #F9FF54;
+  }
+
+  label:hover {
+    background-color: #f1f1f1;
+  }
+
+
+
+  /* about section */
+
+  .grid_main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    margin-top: 6px;
+    margin-left: 30px;
+    margin-right: 10px;
+    align-items: center;
+  }
+
+  .hans_holbein{
+    height: 32rem;
+    margin: 0 auto;
+
+}
+
+  .image{
+    padding: 3rem;
+  }
+  p{
+    font-family: 'Opensansbold';
+    font-weight: 200;
+    font-size: 30px;
+    padding: 5rem;
+    
+  }
+
+
+
+  /* output cards */
+
+ .output{
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    
+ }
+
+ .output img {
+    width: 278px;
+    height: 433px;
+    cursor: pointer;
+ }
+
+/* error message */
+
+
+.message{
+    position: fixed;
+    z-index: 200;
+    top: 25%;
+    border-radius: 45px;
+    border: 3px solid #000;
+    background: #292929;
+    color: #F9FF54;
+    width: 20%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 3rem;
+    padding-top: 3.5rem;
+}
+
+.exit{
+    position: fixed;
+    z-index: 201;
+    top: 30%;
+    left:58%;
+    background-color: #F9FF54;
+    font-family: 'Opensansbold';
+    font-weight: 900;
+    transition: transform 0.2s ease ;
+
+}
+.exit:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.exit:active{
+    transform: scale(85%);
+}
+
+em{
+    font-size: 23px;
+    font-weight: 900;
+}
+
+#card_1{
+    width: 20rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+#card_2{
+    width: 20rem;
+    height: auto;
+    margin: 0 auto;
+
+}
+#card_3{
+    width: 20rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* collection grid */
+
+.grid_collection{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    border: #000000 solid 3px;
+    padding: 2rem;
+    border-radius: 5rem;
+    background-color: #292929;
+}
+
+.grid_collection img{
+    width: 20rem;
+    height: auto;
+}
+
+
+/* key style */
+
+#key_image_style{
+    width: 15rem;
+    height: auto;
+    margin-left: 6rem;
+    margin-bottom: 0;
+    margin-top: 42rem;
+    position: absolute;
+    transition: content 0.3s ease; 
+}
+#key_image_style:hover {
+    content: url('inputs/key_hover.png'); 
+}
+
+.character_paragraph {
+    font-size: 16px;
+    margin-top: 10rem;
+    margin-left: 55rem;
+    background-color: rgb(49, 49, 49);
+    color: #F9FF54;
+    display: none;
+    position: absolute;
+    padding: 2rem;
+    border-radius: 45px;
+    width: 20%;
+    transition: color  ease-in-out;
+}
+
+
+.range_words{
+    display: inline-block;
+    font-size: 18px;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.about_style{
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 5px;
+}
