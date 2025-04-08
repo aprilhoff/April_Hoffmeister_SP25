@@ -1,7 +1,7 @@
 @import url("https://use.typekit.net/xfy5qgj.css");
 
 html {
-	background: rgb(130, 130, 130);
+	background: rgb(192, 190, 198);
 	color: rgb(224, 226, 226);
 	cursor: url(../assets/images/cursos_final.png), auto;
 }
@@ -13,9 +13,9 @@ body{
 
 
 h1{
-	font-family: "modula-round-ribbed", sans-serif;
+	font-family: vista-sans-narrow, sans-serif;
    	font-weight: 800;
-	font-size: 10rem;
+	font-size: 5rem;
 	text-align: center;
 	margin-top: 0;
 
@@ -29,7 +29,6 @@ h2{
 }
 
 h1:hover, h2:hover{
-	text-shadow: 0 0 20px #ff4ebb;
 	cursor: url(../assets/images/cursos_final.png), auto;
 }
 
@@ -184,4 +183,8 @@ a{
 		width: 95%;
 		margin-bottom: 50px;
 		cursor: url(../assets/images/cursos_final.png), auto;
+	}
+
+	.svg:hover{
+		fill: #ff4ebb;
 	}

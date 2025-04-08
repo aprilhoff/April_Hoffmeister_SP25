@@ -165,7 +165,6 @@ submitButton.addEventListener('click', () => {
                         keyImage.style.display = 'none';
                     });
                     
-                    // randomCard.style.transition = "transform 0.5s ease-in-out"; 
                     randomCard.style.transform = "scale(1.2) translateX(-120px) translateY(50px)"; 
 
                     console.log(`Chosen card: ${randomCard.src}`);
